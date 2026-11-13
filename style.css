@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#071329, #14264b, #080f22);
+    color: #e7edff;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    text-align: center;
+    padding: 30px 15px;
+    background: linear-gradient(120deg, #101d42, #39265e);
+    border-bottom: 2px solid #8cc8ed;
+}
+
+header h1 {
+    font-size: 35px;
+    color: white;
+}
+
+header p {
+    color: #c7e8ff;
+}
+
+/* MENU */
+nav {
+    background: #0b1731;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 15px;
+}
+
+nav button {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px 13px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+nav button:hover {
+    background: #7657a6;
+}
+
+/* CONTENIDO */
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.pagina {
+    display: none;
+}
+
+.pagina.activa {
+    display: block;
+}
+
+h2 {
+    color: #b9e3ff;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #b9e3ff;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* IMAGEN PRINCIPAL */
+.imagen-principal {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 15px 0;
+    border: 2px solid #8cc8ed;
+}
+
+/* SECCIONES */
+.panel {
+    background: #ffffff12;
+    border: 1px solid #57739f;
+    border-radius: 15px;
+    padding: 22px;
+    margin: 25px 0;
+}
+
+/* TARJETAS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.card {
+    background: #ffffff12;
+    border: 1px solid #49658f;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* BOTONES */
+.boton {
+    display: inline-block;
+    background: #8cc8ed;
+    color: #08152f;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.boton:hover {
+    background: #c5e9ff;
+}
+
+.secundario {
+    background: #7657a6;
+    color: white;
+}
+
+/* LISTAS */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* FASES DE LA LUNA */
+.fases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+.fase {
+    background: #ffffff12;
+    padding: 12px;
+    border-radius: 15px;
+    border: 1px solid #49658f;
+}
+
+.fase img {
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.fase strong {
+    display: block;
+    color: #b9e3ff;
+}
+
+/* FORMULARIO */
+form {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #8cc8ed;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 130px;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background: #050d1d;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 1px solid #45618d;
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav {
+        gap: 4px;
+        padding: 10px 5px;
+    }
+
+    nav button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .imagen-principal {
+        height: 210px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+}
